@@ -501,3 +501,41 @@ label.s-submitCheck {
 .switcher-wrapper {
     display: none;
 }
+
+/* Media query */
+
+@media screen and (max-width: 680px) {
+    .b-nav,
+    .b-topBar {
+        position: relative;
+        top: 0;
+    }
+
+    .b-slider__info h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption__btn-instructions {
+        top: 0;
+    }
+
+    .b-info__contacts p {
+        font-size: 30px;
+    }
+
+    .b-best__info-head h2 {
+        font: 700 23px 'Open Sans', sans-serif;
+    }
+
+    .b-best__img {
+        left: 0;
+    }
+
+    .b-best__img__div__img-instructions {
+        margin: 5px 0;
+    }
+
+    .b-topBar {
+        display: none;
+    }
+}

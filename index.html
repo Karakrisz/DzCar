@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Auto Club</title>
+	<title>DzCar</title>
 
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/merci.png" />
 
 	<link href="css/master.css" rel="stylesheet">
 
@@ -43,10 +43,10 @@
 						<div class="predefined_styles">
 							<div class="skin-theme-switcher">
 								<h4>Color</h4>
-								<a href="#" data-switchcolor="color1" class="styleswitch"
-									style="background-color:#f76d2b;"> </a>
-								<a href="#" data-switchcolor="color2" class="styleswitch"
-									style="background-color:#de483d;"> </a>
+								<a href="#" data-switchcolor="color1" class="styleswitch" style="background-color:red;">
+								</a>
+								<a href="#" data-switchcolor="color2" class="styleswitch" style="background-color:red;">
+								</a>
 								<a href="#" data-switchcolor="color3" class="styleswitch"
 									style="background-color:#228dcb;"> </a>
 								<a href="#" data-switchcolor="color4" class="styleswitch"
@@ -63,38 +63,25 @@
 		</div>
 	</div>
 	<!-- End Switcher -->
-
 	<header class="b-topBar">
 		<div class="container wow slideInDown" data-wow-delay="0.7s">
 			<div class="row">
-				<div class="col-md-4 col-xs-6">
+				<div class="col-md-4 col-xs-12">
 					<div class="b-topBar__addr">
 						<span class="fa fa-map-marker"></span>
-						pontos cím ide jön
+						info@dzcar.hu
 					</div>
 				</div>
-				<div class="col-md-2 col-xs-6">
+				<div class="col-md-4 col-xs-12">
 					<div class="b-topBar__tel">
 						<span class="fa fa-phone"></span>
 						+36 30 952 8166
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-6">
-					<!--
-					
-					<nav class="b-topBar__nav">
-						<ul>
-							<li><a href="#">Cart</a></li>
-							<li><a href="#">Register</a></li>
-							<li><a href="#">Sign in</a></li>
-						</ul>
-					</nav>
-				-->
-				</div>
-				<div class="col-md-2 col-xs-6">
+				<div class="col-md-4 col-xs-12">
 					<div class="b-topBar__lang">
 						<div class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle='dropdown'>Nyelv</a>
+							<a href="#" class="dropdown-toggle" data-toggle='dropdown'>Language</a>
 							<a class="m-langLink dropdown-toggle" data-toggle='dropdown' href="#"><span
 									class="b-topBar__lang-flag m-en"></span>EN<span class="fa fa-caret-down"></span></a>
 							<ul class="dropdown-menu h-lang">
@@ -114,17 +101,18 @@
 		</div>
 	</header>
 	<!--b-topBar-->
+	<!--b-topBar-->
 
 	<nav class="b-nav">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-3 col-xs-4">
+				<div class="col-sm-4 col-xs-4">
 					<div class="b-nav__logo wow slideInLeft" data-wow-delay="0.3s">
-						<h3><a href="home.html">dz<span>car</span></a></h3>
-						<h2><a href="home.html">Minden mérföld hozzátesz a világhoz.</a></h2>
+						<h3><a href="index.html">dz<span>car</span></a></h3>
+						<h2><a href="index.html">MINDEN MÉRFÖLDKŐ HOZZÁTESZ A VILÁGUNKHOZ.</a></h2>
 					</div>
 				</div>
-				<div class="col-sm-9 col-xs-8">
+				<div class="col-sm-8 col-xs-8">
 					<div class="b-nav__list wow slideInRight" data-wow-delay="0.3s">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
@@ -137,14 +125,16 @@
 						<div class="collapse navbar-collapse navbar-main-slide" id="nav">
 							<ul class="navbar-nav-menu">
 								<li class="dropdown">
-									<a class="dropdown-toggle" data-toggle='dropdown' href="rolunk.html">Rólunk</a>
+									<a class="dropdown-toggle dropdown-toggle-rolunk" data-toggle='dropdown'
+										href="#">Rólam</a>
 								</li>
 								<li class="dropdown">
-									<a class="dropdown-toggle" data-toggle='dropdown' href="tenerife.html">Tenerife</a>
+									<a class="dropdown-toggle dropdown-toggle-tenerife" data-toggle='dropdown'
+										href="#">Tenerife</a>
 								</li>
-								<li><a href="elerhetosegek.html">Elérhetőségek</a></li>
-								<li><a href="about.html">Munkáim</a></li>
-								<li><a href="article.html">Miben segíthetünk?</a></li>
+								<li><a class="dropdown-toggle dropdown-toggle-munkaim" href="#">Munkáim</a></li>
+								<li><a class="dropdown-toggle dropdown-toggle-elerhetosegek" href="#">Elérhetőségek</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -153,995 +143,451 @@
 		</div>
 	</nav>
 	<!--b-nav-->
-
 	<section class="b-slider">
-		<div id="carousel" class="slide carousel carousel-fade">
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="media/main-slider/slider_1.jpg" alt="sliderImg" />
-					<div class="container">
-						<div class="carousel-caption b-slider__info">
-							<h3>Utazz velünk </h3>
-							<h2>MercedesBenz <br />CLS63 AMG</h2>
-							<p>Model 2015</p>
-							<a class="btn m-btn" href="detail.html">lásd a részleteket<span
-									class="fa fa-angle-right"></span></a>
+		<div class="b-slider__container">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<li data-target="#myCarousel" data-slide-to="4"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+
+					<div class="item active">
+						<img src="media/main-slider/silder_0.jpg" alt="sliderImg" style="width:100%;">
+						<div class="carousel-caption b-slider__info wow slideInRight">
+							<h1>Utazás Tenerifére</h1>
+							<button class="carousel-caption__btn-instructions"><span
+									class="fa fa-angle-down"></span></button>
 						</div>
 					</div>
-				</div>
-				<div class="item">
-					<img src="media/main-slider/slider_2.jpg" alt="sliderImg" />
-					<div class="container">
+
+					<div class="item">
+						<img src="media/main-slider/slider_1.jpg" alt="sliderImg" style="width:100%;">
 						<div class="carousel-caption b-slider__info">
-							<h3>Find your dream car</h3>
-							<h2>MercedesBenz <br />CLS63 AMG</h2>
-							<p>Model 2015 </p>
-							<a class="btn m-btn" href="detail.html">lásd a részleteket<span
-									class="fa fa-angle-right"></span></a>
+							<h1>Utazás Tenerifére</h1>
+							<button class="carousel-caption__btn-instructions"><span
+									class="fa fa-angle-down"></span></button>
 						</div>
 					</div>
+
+					<div class="item">
+						<img src="media/main-slider/slider_2.jpg" alt="sliderImg" style="width:100%;">
+						<div class="carousel-caption b-slider__info">
+							<h1>Utazás Tenerifére</h1>
+							<button class="carousel-caption__btn-instructions"><span
+									class="fa fa-angle-down"></span></button>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="media/main-slider/slider_3.jpg" alt="sliderImg" style="width:100%;">
+						<div class="carousel-caption b-slider__info">
+							<h1>Utazás Tenerifére</h1>
+							<button class="carousel-caption__btn-instructions"><span
+									class="fa fa-angle-down"></span></button>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="media/main-slider/slider_4.jpg" alt="sliderImg" style="width:100%;">
+						<div class="carousel-caption b-slider__info">
+							<h1>Utazás Tenerifére</h1>
+							<button class="carousel-caption__btn-instructions"><span
+									class="fa fa-angle-down"></span></button>
+						</div>
+					</div>
+
 				</div>
 
-				<div class="item">
-					<img src="media/main-slider/slider_3.jpg" alt="sliderImg" />
-					<div class="container">
-						<div class="carousel-caption b-slider__info">
-							<h3>Find your dream car</h3>
-							<h2>MercedesBenz <br />CLS63 AMG</h2>
-							<p>Model 2015</p>
-							<a class="btn m-btn" href="detail.html">lásd a részleteket<span
-									class="fa fa-angle-right"></span></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="media/main-slider/slider_4.jpg" alt="sliderImg" />
-					<div class="container">
-						<div class="carousel-caption b-slider__info">
-							<h3>Find your dream car</h3>
-							<h2>MercedesBenz <br />CLS63 AMG</h2>
-							<p>Model 2015</p>
-							<a class="btn m-btn" href="detail.html">lásd a részleteket<span
-									class="fa fa-angle-right"></span></a>
-						</div>
-					</div>
-				</div>
-
+				<!-- Left and right controls -->
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">
+					<span class="fa fa-angle-right m-control-right"></span>
+				</a>
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+					<span class="fa fa-angle-left m-control-left"></span>
+				</a>
 			</div>
-			<a class="carousel-control right" href="#carousel" data-slide="next">
-				<span class="fa fa-angle-right m-control-right"></span>
-			</a>
-			<a class="carousel-control left" href="#carousel" data-slide="prev">
-				<span class="fa fa-angle-left m-control-left"></span>
-			</a>
 		</div>
 	</section>
 	<!--b-slider-->
-	<!--
-	<section class="b-search">
-		<div class="container">
-			<h1 class="wow zoomInUp" data-wow-delay="0.3s">UNSURE WHICH VEHICLE YOU ARE LOOKING FOR? FIND IT HERE</h1>
-			<div class="b-search__main wow zoomInUp" data-wow-delay="0.3s">
-				<h4>SELECT VEHICLE BODY TYPE</h4>
-				<form action="listingsTwo.html" method="POST" class="b-search__main-form">
-					<div class="row">
-						<div class="col-xs-12 col-md-8">
-							<div class="m-firstSelects">
-								<div class="col-xs-4">
-									<select name="select1">
-										<option value="0" selected="selected">Any Make</option>
-										<option value="1">Any Make</option>
-										<option value="2">Any Make</option>
-										<option value="3">Any Make</option>
-										<option value="4">Any Make</option>
-									</select>
-									<span class="fa fa-caret-down"></span>
-									<p>MISSING MANUFACTURER?</p>
-								</div>
-								<div class="col-xs-4">
-									<select name="select2">
-										<option value="0" selected="selected">Any Model</option>
-										<option value="1">Any Model</option>
-										<option value="2">Any Model</option>
-										<option value="3">Any Model</option>
-									</select>
-									<span class="fa fa-caret-down"></span>
-									<p>MISSING MODEL?</p>
-								</div>
-								<div class="col-xs-4">
-									<select name="select3">
-										<option value="1" selected="selected">Vehicle Status</option>
-										<option value="2">Vehicle Status 2</option>
-										<option value="3">Vehicle Status 3</option>
-										<option value="4">Vehicle Status 4</option>
-										<option value="5">Vehicle Status 5</option>
-									</select>
-									<span class="fa fa-caret-down"></span>
-									<p>E.G: NEW, USED, CERTIFIED</p>
-								</div>
-							</div>
-							<div class="m-secondSelects">
-								<div class="col-xs-4">
-									<select name="select4">
-										<option value="0" selected="selected">Min Year</option>
-										<option value="1">Min Year</option>
-										<option value="2">Min Year</option>
-										<option value="3">Min Year</option>
-										<option value="4">Min Year</option>
-										<option value="5">Min Year</option>
-									</select>
-									<span class="fa fa-caret-down"></span>
-								</div>
-								<div class="col-xs-4">
-									<select name="select5">
-										<option value="0" selected="selected">Max Year</option>
-										<option value="1">Max Year</option>
-										<option value="2">Max Year</option>
-										<option value="3">Max Year</option>
-										<option value="4">Max Year</option>
-									</select>
-									<span class="fa fa-caret-down"></span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-12 text-left s-noPadding">
-							<div class="b-search__main-form-range">
-								<label>PRICE RANGE</label>
-								<div class="slider"></div>
-								<input type="hidden" name="min" class="j-min" value="" />
-								<input type="hidden" name="max" class="j-max" value="" />
-							</div>
-							<div class="b-search__main-form-submit">
-								<a href="#">Advanced search</a>
-								<button type="submit" class="btn m-btn">Search the Vehicle<span
-										class="fa fa-angle-right"></span></button>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</section>
--->
 
 	<!--b-search-->
 
-	<!--
-	<section class="b-world">
+	<section class="b-blog b-blog-rolunk s-shadow">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 col-xs-12">
-					<div class="b-world__item wow zoomInLeft" data-wow-delay="0.3s">
-						<img class="img-responsive" src="media/370x200/wolks.jpg" alt="wolks" />
-						<div class="b-world__item-val">
-							<span class="b-world__item-val-title">WE OFFER</span>
+				<div class="col-md-9 col-xs-12">
+					<div class="b-blog__posts">
+						<div class="b-blog__posts-one wow zoomInUp" data-wow-delay="0.3s">
+							<div class="row m-noBlockPadding">
+								<div class="col-sm-1 col-xs-2">
+									<div class="b-blog__posts-one-author">
+										<div class="b-blog__posts-one-author-img">
+
+										</div>
+										<div class="b-blog__posts-one-share s-lineDownCenter">Elérhetőségeim</div>
+										<div class="b-blog__posts-one-social">
+											<div>
+												<a href="#"><span class="fa fa-google-plus-square "></span></a>
+												<a href="#"><span class="fa  fa-facebook-square"></span></a>
+											</div>
+											<div>
+												<a href="#"><span class="fa fa-twitter-square "></span></a>
+												<a href="#"><span class="fa fa-pinterest-square"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-11 col-xs-10">
+									<div class="b-blog__posts-one-body">
+										<header class="b-blog__posts-one-body-head">
+											<h2 class="s-titleDet">Rólam</h2>
+											<div class="b-blog__posts-one-body-head-notes">
+												<span class="b-blog__posts-one-body-head-notes-note"><span
+														class="fa fa-user"></span>Ügyvezető</span>
+												<span class="b-blog__posts-one-body-head-notes-note"><span
+														class="fa fa-calendar-o"></span>20th May 2015</span>
+											</div>
+										</header>
+										<div class="b-blog__posts-one-body-main">
+											<div class="b-blog__posts-one-body-main-img">
+												<ul class="bxslider enable-bx-slider" data-pager-custom="#bx-pager"
+													data-mode="fade" data-pager-slide="false"
+													data-mode-pager="horizontal" data-pager-qty="0">
+													<li><img class="img-responsive"
+															src="images/rolam/Zengő-Michelisz.jpg" alt="jaguar" /></li>
+													<li><img class="img-responsive"
+															src="images/rolam/Wéber-Michelisz.jpg" alt="jaguar" /></li>
+													<li><img class="img-responsive"
+															src="images/rolam/zengo-zoltan-e1456918812549.jpg"
+															alt="jaguar" /></li>
+												</ul>
+												<div class="b-blog__posts-one-body-main-img-small" id="bx-pager">
+													<a href="#" data-slide-index="0"><img
+															src="images/rolam/Zengő-Michelisz.jpg" alt="car" /></a>
+													<a href="#" data-slide-index="1"><img
+															src="images/rolam/Wéber-Michelisz.jpg" alt="car" /></a>
+													<a href="#" data-slide-index="2"><img
+															src="images/rolam/zengo-zoltan-e1456918812549.jpg"
+															alt="car" /></a>
+												</div>
+											</div>
+											<p>Gépjárművekhez kötődő
+												tevékenységemet még egyetemi éveim alatt a 2000-es
+												évek elején kezdtem meg. Már akkor kialakult egy kötődésem az autóipar
+												felé.</p>
+											<button class="b-blog__posts-one-body-main-button">Bővebben</button>
+											<p class="b-blog__posts-one-body-main-p">Mondhatjuk, hogy a szamárlétrát
+												végig járva sok tevékenységben
+												megfordultam, és sok helyet megjárva, egy szóval fogalmazva az
+												„autós-világot” megismertem.
+												Autószerviz(ek), gumiszerviz(ek), autómosó(k), autóverseny(ek), külföldi
+												autó importok, mind-mind a hosszú évek tapasztalati hátterem mögött van.
+												Van, amiben dolgoztam, van, amit magam alapítottam, és van ahol csak
+												megfigyelőként, kapcsolati tőkéket kialakítva mozogtam. Szívesen említem
+												meg a Hungaroringet, a Renault Clio kupát, a WTC-t, Zengő Zoltánt, Wéber
+												Gábort, de nem szeretnék minden apró részletre kitérni… Utóbbi pár évben
+												pedig személyes jó kapcsolatom alakult ki Cserkúti Öcsi bácsival.
+												Munkásságaim során a ma is jól működő Sonax autómosó hálózatban is
+												tevékenykedtem, de előtte gumiszerviz tulajdonos is voltam. Majd
+												megalakítottam a saját autómosómat, egy kicsi, de kezdeti stádiumnak
+												megfelelő Budakalászi telephellyel. Ahogy magával ragadt egyre jobban ez
+												az „iparág” úgy egyre szívesebben merültem bele új autómosót
+												kialakítani, nyitni, majd egy időben 9 telephellyel büszkélkedve az
+												ország legnagyobb autómosó hálózatát vezettem NaturWash néven. Jelen
+												voltunk - mint fentebb említettem - első helyként a Budakalászi Cora,
+												most már Auchan parkolójában. Majd egy nagyobb lépésként az Árkád
+												Budapesti üzletházában kaptam lehetőséget 2009-ben. Ezután az Árkád
+												vezetőségétől felkérés érkezett, az újonnan nyíló Szegedi Árkád
+												bevásárlóközpont parkolójába telepíteni egy 3 állásos kézi autómosót
+												2011-ben. 2012-ben üzleti lehetőség adódott az Asia Centerben működő
+												kézi autómosó átvételére, majd az év második felében az Europark (jelen
+												nevén Shopmark) bevásárlóközpontban is megvásárolni egy autómosót.
+												2013-ban a Mammut mélygarázsában üzemelő telephely került a NaturWash
+												égisze alá. 2014-ben pedig különleges helyzetbe kerülve 2 telephely
+												nyitására is sor került, az egyik a Pólus Center üzletház parkolójában,
+												a másik a WestEnd mélygarázsában tönkre ment autómosó újra nyitásával.
+												Ezen helyen olyan sikeresen tudtuk szolgáltatásainkat nyújtani, hogy
+												lehetőség nyílt a WestEnd kültéri parkolójába is egy 3 állásos kézi
+												autómosót kialakítani. Ekkor értem el a 9db telephelyet, ami már
+												túllépet határaimon.
+												Sajnos, mint mindenkit, a munkaerő válság minket is elért, és szépen,
+												lassan a nem annyira felügyelhető, és nem túlzottan eredményesen működő
+												telephelyeket bezártam, majd az összes telephelyemtől egyenként
+												megváltam.
+												A jármű iparhoz való vonzódásom a fentiek ellenére sem csitult.
+												Szerencsémre az ismeretségi körömben a TakarékBank vezetősége felkért a
+												saját öltetük kivitelezésének munkafolyamat ellenőrzésére.
+												Óriási lépés, és megtiszteltetés ért, hogy eddig még a nagy nyilvánosság
+												előtt nem létező, de a bank bizalmát élvező teszt jármű gyártását
+												felügyelhettem, majd ennek az ötletnek folyamán további gyártásokat is
+												végig követhettem.</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<h2>Low Prices, No Haggling</h2>
-						<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam.
-							Vivamus et nunc. Nunc consequ
-							sem velde metus imperdiet lacinia.</p>
-					</div>
-				</div>
-				<div class="col-sm-4 col-xs-12">
-					<div class="b-world__item wow zoomInUp" data-wow-delay="0.3s">
-						<img class="img-responsive" src="media/370x200/mazda.jpg" alt="mazda" />
-						<div class="b-world__item-val">
-							<span class="b-world__item-val-title">WE ARE THE</span>
-						</div>
-						<h2>Largest Car Dealership</h2>
-						<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam.
-							Vivamus et nunc. Nunc consequ
-							sem velde metus imp erdiet lacinia.</p>
-					</div>
-				</div>
-				<div class="col-sm-4 col-xs-12">
-					<div class="b-world__item wow zoomInRight" data-wow-delay="0.3s">
-						<img class="img-responsive" src="media/370x200/chevrolet.jpg" alt="chevrolet" />
-						<div class="b-world__item-val">
-							<span class="b-world__item-val-title">OUR CUSTOMERS GET</span>
-						</div>
-						<h2>Multipoint Safety Check</h2>
-						<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam.
-							Vivamus et nunc. Nunc consequ
-							sem velde metus imp erdiet lacinia.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	-->
-	<!--b-world-->
-	<!--
-	<section class="b-featured">
+	<!--b-blog-->
+	<section class="b-best b-best-tenerife">
 		<div class="container">
-			<h2 class="s-title wow zoomInUp" data-wow-delay="0.3s">Featured Vehicles</h2>
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">
+					<div class="b-best__info">
+						<header class="s-lineDownLeft b-best__info-head">
+							<h2 class="wow zoomInUp" data-wow-delay="0.5s">Autó &amp; Utazás &amp; Tenerife</h2>
+						</header>
+						<p class="wow zoomInUp" data-wow-delay="0.5s">Cégünk egy újabb profillal bővítette
+							szolgáltatását, amiben külföldi ingatlan vásárlásában nyújtunk segítséget, beruházási
+							szempontból eziránt érdeklődőknek. Spanyolország Tenerife szigetén, és Thaiföldön Pattayán
+							belül. Mindkét helyen apartmanok, studiók vásárlásában segítjük a befeketetni vágyó
+							klienseknek.
+							<strong>
+								„A statisztikák alapján a legtöbb igazán gazdag ember ingatlanbefektetéseknek
+								köszönhetően
+								gazdagodott meg. Én elsősorban a rendszeres bérleti díj bevétel miatt fektetek be
+								ingatlanokba, ritka megnyugtató érzés, amikor tudod, hogy több tucat ingatlanból érkezik
+								hónapról hónapra rendszeres bevételed.”
+							</strong>
+							Mind ezek mellett szeretnénk Önökkel megismertetni egy saját befektetést, mely Tenerife
+							szigetén található apartman beruházásáról szól, és ennek bérbeadási folyamatáról.
+
+							Ahogy a mondás is hírlik, a „puding próbája az evés” eszerint csak úgy kívánunk befektetési
+							lehetőséget kínálni bármely jövőbeli ügyfelünkkel, hogy erre fel tudjuk mutatni a saját
+							példánkat, és ennek munkafolyamatait, bevételeit.</p>
+						<!--
+						<a href="#" class="btn m-btn m-readMore wow zoomInUp" data-wow-delay="0.5s">view
+							listings<span class="fa fa-angle-right"></span></a> -->
+					</div>
+				</div>
+				<div class="b-best__img col-sm-6 col-xs-12">
+					<div class="row">
+						<div class="b-best__img__div col-sm-4 col-xs-12">
+							<div class="wow zoomInLeft" data-wow-delay="0.3s">
+								<img class="b-best__img__div__img-instructions" src="images/tenerife/tenerife.jpg"
+									alt="b-best__img" />
+							</div>
+						</div>
+						<div class="b-best__img__div col-sm-4 col-xs-12">
+							<div class="wow zoomInUp" data-wow-delay="0.3s">
+								<img class="b-best__img__div__img-instructions" src="images/tenerife/tenerife2.jpg"
+									alt="b-best__img" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="b-best__img__div col-sm-4 col-xs-12">
+							<div class="b-world__item wow zoomInLeft" data-wow-delay="0.3s">
+								<img class="b-best__img__div__img-instructions" src="images/tenerife/tenerife5.jpg"
+									alt="b-best__img" />
+							</div>
+						</div>
+						<div class="b-best__img__div col-sm-4 col-xs-12">
+							<div class="b-world__item wow zoomInUp" data-wow-delay="0.3s">
+								<img class="b-best__img__div__img-instructions" src="images/tenerife/tenerife4.jpg"
+									alt="b-best__img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!--b-best-->
+	<section class="b-featured b-featured-munkaim">
+		<div class="container">
+			<h2 class="s-title wow zoomInUp" data-wow-delay="0.3s">Munkáim</h2>
 			<div id="carousel-small" class="owl-carousel enable-owl-carousel" data-items="4" data-navigation="true"
 				data-auto-play="true" data-stop-on-hover="true" data-items-desktop="4" data-items-desktop-small="4"
 				data-items-tablet="3" data-items-tablet-small="2">
 				<div>
 					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
-						<a href="detail.html">
-							<img src="media/186x113/mers.jpg" alt="mers" />
+						<a href="index.html">
+							<img src="images/munkaim/arkad.JPG" alt="b-featured__item__img" />
 							<span class="m-premium">Premium</span>
 						</a>
 						<div class="b-featured__item-price">
-							$184,900
+							Árkád autómosó
 						</div>
 						<div class="clearfix"></div>
-						<h5><a href="detail.html">MERCEDES-AMG GT / GT S</a></h5>
-						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+						<h5><a href="#">-</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>-</div>
 						<div class="b-featured__item-links">
-							<a href="#">Used</a>
-							<a href="#">2014</a>
-							<a href="#">Manual</a>
-							<a href="#">Orange</a>
-							<a href="#">Petrol</a>
 						</div>
 					</div>
 				</div>
 				<div>
 					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
-						<a href="detail.html">
-							<img src="media/186x113/audi.jpg" alt="audi" />
+						<a href="index.html">
+							<img src="images/munkaim/budakalasz.JPG" alt="b-featured__item__img" />
 						</a>
 						<div class="b-featured__item-price">
-							$95,900
+							Budakaszál autómosó
 						</div>
 						<div class="clearfix"></div>
-						<h5><a href="detail.html">AUDI R8 SPYDER V-8</a></h5>
-						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00 KM</div>
+						<h5><a href="#">-</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span></div>
 						<div class="b-featured__item-links">
-							<a href="#">Used</a>
-							<a href="#">2015</a>
-							<a href="#">Manual</a>
-							<a href="#">Orange</a>
-							<a href="#">Petrol</a>
+
 						</div>
 					</div>
 				</div>
 				<div>
 					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
-						<a href="detail.html">
-							<img src="media/186x113/aston.jpg" alt="aston" />
-							<span class="m-leasing">LEASING AVAILABLE</span>
+						<a href="index.html">
+							<img src="images/munkaim/asia-center.JPG" alt="b-featured__item__img" />
 						</a>
 						<div class="b-featured__item-price">
-							$101,025
+							Ázsia Center autómosó
 						</div>
 						<div class="clearfix"></div>
-						<h5><a href="detail.html">ASTON MARTIN VANTAGE</a></h5>
-						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+						<h5><a href="#">-</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span></div>
 						<div class="b-featured__item-links">
-							<a href="#">Used</a>
-							<a href="#">2014</a>
-							<a href="#">Manual</a>
-							<a href="#">Orange</a>
-							<a href="#">Petrol</a>
+
 						</div>
 					</div>
 				</div>
 				<div>
 					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
-						<a href="detail.html">
-							<img src="media/186x113/jaguar.jpg" alt="jaguar" />
+						<a href="index.html">
+							<img src="images/munkaim/mamut.JPG" alt="b-featured__item__img" />
 						</a>
 						<div class="b-featured__item-price">
-							$130,825
+							Mammut autómosó
 						</div>
 						<div class="clearfix"></div>
-						<h5><a href="detail.html">JAGUAR F-TYPE R</a></h5>
-						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00</div>
+						<h5><a href="#">-</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span></div>
 						<div class="b-featured__item-links">
-							<a href="#">Used</a>
-							<a href="#">2015</a>
-							<a href="#">Manual</a>
-							<a href="#">Orange</a>
-							<a href="#">Petrol</a>
+
 						</div>
 					</div>
 				</div>
 				<div>
 					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
-						<a href="detail.html">
-							<img src="media/186x113/mers.jpg" alt="mers" />
-							<span class="m-premium">Premium</span>
+						<a href="index.html">
+							<img src="images/munkaim/polus-center.JPG" alt="b-featured__item__img" />
 						</a>
 						<div class="b-featured__item-price">
-							$184,900
+							Pólus Center autómosó
 						</div>
 						<div class="clearfix"></div>
-						<h5><a href="detail.html">MERCEDES-AMG GT / GT S</a></h5>
-						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+						<h5><a href="#">-</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span></div>
 						<div class="b-featured__item-links">
-							<a href="#">Used</a>
-							<a href="#">2014</a>
-							<a href="#">Manual</a>
-							<a href="#">Orange</a>
-							<a href="#">Petrol</a>
+
 						</div>
 					</div>
 				</div>
 				<div>
 					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
-						<a href="detail.html">
-							<img src="media/186x113/audi.jpg" alt="audi" />
+						<a href="index.html">
+							<img src="images/munkaim/euro-park.jpg" alt="b-featured__item__img" />
 						</a>
 						<div class="b-featured__item-price">
-							$95,900
+							EuroPark autómosó
 						</div>
 						<div class="clearfix"></div>
-						<h5><a href="detail.html">AUDI R8 SPYDER V-8</a></h5>
-						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00 KM</div>
+						<h5><a href="#">-</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span></div>
 						<div class="b-featured__item-links">
-							<a href="#">Used</a>
-							<a href="#">2015</a>
-							<a href="#">Manual</a>
-							<a href="#">Orange</a>
-							<a href="#">Petrol</a>
+
 						</div>
 					</div>
 				</div>
 				<div>
 					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
-						<a href="detail.html">
-							<img src="media/186x113/aston.jpg" alt="aston" />
-							<span class="m-leasing">LEASING AVAILABLE</span>
+						<a href="index.html">
+							<img src="images/munkaim/west-end-p1.JPG" alt="b-featured__item__img" />
 						</a>
 						<div class="b-featured__item-price">
-							$101,025
+							WestEnd P1 autómosó
 						</div>
 						<div class="clearfix"></div>
-						<h5><a href="detail.html">ASTON MARTIN VANTAGE</a></h5>
-						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+						<h5><a href="#">-</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span></div>
 						<div class="b-featured__item-links">
-							<a href="#">Used</a>
-							<a href="#">2014</a>
-							<a href="#">Manual</a>
-							<a href="#">Orange</a>
-							<a href="#">Petrol</a>
+
 						</div>
 					</div>
 				</div>
 				<div>
 					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
-						<a href="detail.html">
-							<img src="media/186x113/jaguar.jpg" alt="jaguar" />
+						<a href="index.html">
+							<img src="images/munkaim/west-end-a2.JPG" alt="b-featured__item__img" />
 						</a>
 						<div class="b-featured__item-price">
-							$130,825
+							WestEnd A2 autómosó
 						</div>
 						<div class="clearfix"></div>
-						<h5><a href="detail.html">JAGUAR F-TYPE R</a></h5>
-						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00</div>
+						<h5><a href="#">-</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span></div>
 						<div class="b-featured__item-links">
-							<a href="#">Used</a>
-							<a href="#">2015</a>
-							<a href="#">Manual</a>
-							<a href="#">Orange</a>
-							<a href="#">Petrol</a>
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	-->
 	<!--b-featured-->
-	<!--
-	<section class="b-welcome">
+
+
+	<div class="b-features b-features-elerhetosegek">
+		<!--
 		<div class="container">
 			<div class="row">
-				<div class="b-welcome__services">
-					<div class="col-md-3 col-xs-12">
-						<div class="row">
-							<div class="col-xs-12 m-padding">
-								<div class="b-welcome__services-auto wow zoomInLeft" data-wow-delay="0.3s">
-									<div class="b-welcome__services-img m-auto">
-										<span class="fa fa-cab"></span>
-									</div>
-									<h3>AUTO LOANS</h3>
-								</div>
-							</div>
-							<div class="col-xs-12 text-right visible-md visible-lg">
-								<div class="m-circle wow slideInRight" data-wow-delay="0.3s">
-									<span class="b-welcome__services-circle"></span>
-								</div>
-							</div>
-							<div class="col-xs-12 m-padding">
-								<div class="b-welcome__services-buying wow zoomInLeft" data-wow-delay="0.3s">
-									<div class="b-welcome__services-img m-buying">
-										<span class="fa fa-book"></span>
-									</div>
-									<h3>Buying guide</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-6">
-					<div class="b-welcome__text wow zoomInUp" data-wow-delay="0.3s">
-						<h2>WORLD'S LEADING CAR DEALER</h2>
-						<h3>WELCOME TO AUTOCLUB</h3>
-						<p>Curabitur libero. Donec facilisis velit eudsl est. Phasellus consequat. Aenean vita quam.
-							Vivamus et nunc. Nunc consequat sem velde metus imperdiet lacinia. Dui estter neque molestie
-							necd dignissim ac hendrerit quis purus. Etiam sit amet vec convallis massa scelerisque
-							mattis. Sed placerat leo nec.</p>
-						<p>Ipsum midne ultrices magn eu tempor quam dolor eustrl sem. Donec quis dolel Donec pede quam
-							placerat alterl tristique faucibus posuere lobortis.</p>
-						<ul>
-							<li><span class="fa fa-check"></span>Donec facilisis velit eu est phasellus consequat </li>
-							<li><span class="fa fa-check"></span>Aenean vitae quam. Vivamus et nunc nunc consequat</li>
-							<li><span class="fa fa-check"></span>Sem vel metus imperdiet lacinia enean </li>
-							<li><span class="fa fa-check"></span>Dapibus aliquam augue fusce eleifend quisque tels</li>
-						</ul>
-					</div>
-				</div>
-				<div class="b-welcome__services">
-					<div class="col-md-3 col-xs-12">
-						<div class="row">
-							<div class="col-xs-12 m-padding">
-								<div class="b-welcome__services-trade wow zoomInRight" data-wow-delay="0.3s">
-									<div class="b-welcome__services-img m-trade">
-										<span class="fa fa-male"></span>
-									</div>
-									<h3>Trade-Ins</h3>
-								</div>
-							</div>
-							<div class="col-xs-12 text-left visible-md visible-lg">
-								<div class="m-circle pull-right wow slideInLeft" data-wow-delay="0.3s">
-									<span class="b-welcome__services-circle m-left"></span>
-								</div>
-							</div>
-							<div class="col-xs-12 m-padding">
-								<div class="b-welcome__services-support wow zoomInRight" data-wow-delay="0.3s">
-									<div class="b-welcome__services-img m-support">
-										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px"
-											height="45px" viewBox="0 0 612 612"
-											style="enable-background:new 0 0 612 612;" xml:space="preserve">
-											<g>
-												<path d="M257.938,336.072c0,17.355-14.068,31.424-31.423,31.424c-17.354,0-31.422-14.068-31.422-31.424
-														c0-17.354,14.068-31.423,31.422-31.423C243.87,304.65,257.938,318.719,257.938,336.072z M385.485,304.65
-														c-17.354,0-31.423,14.068-31.423,31.424c0,17.354,14.069,31.422,31.423,31.422c17.354,0,31.424-14.068,31.424-31.422
-														C416.908,318.719,402.84,304.65,385.485,304.65z M612,318.557v59.719c0,29.982-24.305,54.287-54.288,54.287h-39.394
-														C479.283,540.947,379.604,606.412,306,606.412s-173.283-65.465-212.318-173.85H54.288C24.305,432.562,0,408.258,0,378.275v-59.719
-														c0-20.631,11.511-38.573,28.46-47.758c0.569-84.785,25.28-151.002,73.553-196.779C149.895,28.613,218.526,5.588,306,5.588
-														c87.474,0,156.105,23.025,203.987,68.43c48.272,45.777,72.982,111.995,73.553,196.779C600.489,279.983,612,297.925,612,318.557z
-														M497.099,336.271c0-13.969-0.715-27.094-1.771-39.812c-24.093-22.043-67.832-38.769-123.033-44.984
-														c7.248,8.15,13.509,18.871,17.306,32.983c-33.812-26.637-100.181-20.297-150.382-79.905c-2.878-3.329-5.367-6.51-7.519-9.417
-														c-0.025-0.035-0.053-0.062-0.078-0.096l0.006,0.002c-8.931-12.078-11.976-19.262-12.146-11.31
-														c-1.473,68.513-50.034,121.925-103.958,129.46c-0.341,7.535-0.62,15.143-0.62,23.08c0,28.959,4.729,55.352,12.769,79.137
-														c30.29,36.537,80.312,46.854,124.586,49.59c8.219-13.076,26.66-22.205,48.136-22.205c29.117,0,52.72,16.754,52.72,37.424
-														c0,20.668-23.604,37.422-52.72,37.422c-22.397,0-41.483-9.93-49.122-23.912c-30.943-1.799-64.959-7.074-95.276-21.391
-														C198.631,535.18,264.725,568.41,306,568.41C370.859,568.41,497.099,486.475,497.099,336.271z M550.855,264.269
-														C547.4,116.318,462.951,38.162,306,38.162S64.601,116.318,61.145,264.269h20.887c7.637-49.867,23.778-90.878,48.285-122.412
-														C169.37,91.609,228.478,66.13,306,66.13c77.522,0,136.63,25.479,175.685,75.727c24.505,31.533,40.647,72.545,48.284,122.412
-														H550.855L550.855,264.269z" />
-											</g>
-										</svg>
-									</div>
-									<h3>24/7 support</h3>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="col-md-9 col-md-offset-3 col-xs-6 col-xs-offset-6">
+					<ul class="b-features__items">
+						<li class="wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">
+						</li>
+						<li class="wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">
+						</li>
+					</ul>
 				</div>
 			</div>
-		</div>
-	</section>
-	-->
-	<!--b-welcome-->
-	<!--
-	<section class="b-homeAuto">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-6">
-					<div class="b-homeAuto__latest">
-						<h5 class="s-titleBg wow zoomInLeft" data-wow-delay="0.3s">GIVING OUR CUSTOMERS BEST DEALS</h5>
-						<br />
-						<h2 class="s-title wow zoomInLeft" data-wow-delay="0.3s">LATEST VEHICLES ON SALE</h2>
-						<div class="b-auto__main">
-							<div class="row">
-								<div class="col-md-6 col-sm-12">
-									<div class="b-auto__main-item wow zoomInUp" data-wow-delay="0.3s">
-										<img class="img-responsive center-block" src="media/270x150/nissanGT.jpg"
-											alt="nissan" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Nissan GT-R NISMO</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$10,857
-											</span>
-											<span class="m-number">
-												<span class="fa fa-tachometer"></span>35,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-12">
-									<div class="b-auto__main-item wow zoomInUp" data-wow-delay="0.3s">
-										<img class="img-responsive center-block" src="media/270x150/bmw.jpg"
-											alt="bmw" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">BMW 650i Coupe</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$95,900
-											</span>
-											<span class="m-number">
-												<span class="fa fa-tachometer"></span>12,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-12">
-									<div class="b-auto__main-item wow zoomInUp" data-wow-delay="0.3s">
-										<img class="img-responsive center-block" src="media/270x150/LandRover.jpg"
-											alt="LandRover" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Land Rover Range Rover</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$44,380
-											</span>
-											<span class="m-number">
-												<span class="fa fa-tachometer"></span>35,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-12">
-									<div class="b-auto__main-item wow zoomInUp" data-wow-delay="0.3s">
-										<img class="img-responsive center-block" src="media/270x150/corvette.jpg"
-											alt="corvette" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Chevrolet Corvette Z06</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$95,900
-											</span>
-											<span class="m-number">
-												<span class="fa fa-tachometer"></span>12,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-6">
-					<div class="b-homeAuto__world">
-						<h5 class="s-titleBg wow zoomInRight" data-wow-delay="0.3s">EVERYTHING YOU NEED TO KNOW</h5>
-						<br />
-						<h2 class="s-title wow zoomInRight" data-wow-delay="0.3s">THE WORLD OF AUTOS</h2>
-						<div class="b-homeAuto__world-item wow zoomInUp" data-wow-delay="0.3s">
-							<div class="row">
-								<div class="col-sm-7 col-xs-12">
-									<div class="b-homeAuto__world-item-info">
-										<h2>
-											<a href="article.html">2016 Mazda CX-3
-												Mazda's new mini-ute drives nearly<br />
-												as sharp as it looks.
-											</a>
-										</h2>
-										<div class="b-world__item-val">
-											<div class="b-world__item-val-circles">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="m-empty"></span>
-											</div>
-											<span class="b-world__item-num">4.1</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-5 col-xs-12">
-									<img src="media/222x150/mazda2.jpg" class="img-responsive center-block"
-										alt="mazda" />
-								</div>
-							</div>
-							<div class="b-homeAuto__world-item-text">
-								<span>25 MAY 2015</span>
-								<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae
-									quam mus
-									et nunc. Nunc conseq sem velde metus imperdiet lacinia. Aenean vulputate. Donec vene
-									natis leo curabitur at neque ut sapien fusce cursus dapibus ligula</p>
-							</div>
-						</div>
-						<div class="b-homeAuto__world-item wow zoomInUp" data-wow-delay="0.3s">
-							<div class="row">
-								<div class="col-xs-12 col-sm-7">
-									<div class="b-homeAuto__world-item-info">
-										<h2>
-											<a href="article.html"> 2015 Chevrolet Corvette Z06 vs.
-												2015 Nissan GT-R NISMO, 2
-												014 Porsche 911 Turbo S
-											</a>
-										</h2>
-										<div class="b-world__item-val">
-											<div class="b-world__item-val-circles">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="m-empty"></span>
-											</div>
-											<span class="b-world__item-num">4.1</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-5 col-xs-12">
-									<img src="media/222x150/bmw2.jpg" alt="bmw" class="img-responsive center-block" />
-								</div>
-							</div>
-							<div class="b-homeAuto__world-item-text">
-								<span>25 MAY 2015</span>
-								<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae
-									quam mus
-									et nunc. Nunc conseq sem velde metus imperdiet lacinia. Aenean vulputate. Donec vene
-									natis leo curabitur at neque ut sapien fusce cursus dapibus ligula</p>
-							</div>
-						</div>
-						<a href="blog.html" class="btn m-btn wow zoomInUp" data-wow-delay="0.3s">VISIT OUR BLOG<span
-								class="fa fa-angle-right"></span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	-->
-	<!--b-homeAuto-->
-	<!--
-	<section class="b-count">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-11 col-xs-12 percent-blocks m-main" data-waypoint-scroll="true">
-					<div class="row">
-						<div class="col-sm-3 col-xs-6">
-							<div class="b-count__item">
-								<div class="b-count__item-circle">
-									<span class="fa fa-car"></span>
-								</div>
-								<div class="chart" data-percent="5000">
-									<h2 class="percent">5000</h2>
-								</div>
-								<h5>vehicles in stock</h5>
-							</div>
-						</div>
-						<div class="col-sm-3 col-xs-6">
-							<div class="b-count__item">
-								<div class="b-count__item-circle">
-									<span class="fa fa-users"></span>
-								</div>
-								<div class="chart" data-percent="3100">
-									<h2 class="percent">3100</h2>
-								</div>
-								<h5>HAPPY CUSTOMER REVIEWS</h5>
-							</div>
-						</div>
-						<div class="col-sm-3 col-xs-6">
-							<div class="b-count__item">
-								<div class="b-count__item-circle">
-									<span class="fa fa-building-o"></span>
-								</div>
-								<div class="chart" data-percent="500">
-									<h2 class="percent">500</h2>
-								</div>
-								<h5>DEALER BRANCHES</h5>
-							</div>
-						</div>
-						<div class="col-sm-3 col-xs-6">
-							<div class="b-count__item j-lastHome">
-								<div class="b-count__item-circle">
-									<span class="fa fa-suitcase"></span>
-								</div>
-								<div class="chart" data-percent="54">
-									<h2 class="percent">54</h2>
-								</div>
-								<h5>FREE PARTS GIVEN</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	-->
-	<!--b-count-->
-	<!--
-	<section class="b-homeReviews">
-		<div class="container">
-			<h1 class="s-title wow zoomInUp" data-wow-delay="0.3s">WHAT CUSTOMERS SAYING</h1>
-			<div id="carousel-small-revHome" class="owl-carousel enable-owl-carousel" data-items="2"
-				data-navigation="true" data-auto-play="true" data-stop-on-hover="true" data-items-desktop="2"
-				data-items-desktop-small="2" data-items-tablet="1" data-items-tablet-small="1">
-				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
-					<div class="b-homeReviews__main-body m-jaguarRev">
-						<p>Donec facilisis velit eust. Phasellus cons quat. Aenean letmein vitae quam. Vivamus let nunc.
-							Nunc consequsem velde metus imperdiet lacinia. Nam rutrum congued diam. Vestibulum acda
-							risus eros auctor as morbids sem magna viverra quis consectetuer quis nec magna. Lorem ipsum
-							dolor ametu consectetur adipisicing elit sed do eiusmod.</p>
-					</div>
-					<div class="b-homeReviews__main-person">
-						<div class="b-review__main-person m-personTwo">
-							<div class="b-review__main-person-inside m-personTwo">
-							</div>
-						</div>
-						<div class="b-homeReviews__main-person-name">
-							<em>"</em>
-							<h4>JOHN SMITH</h4>
-							<p>Customer, Ferrari 488 GTB 2 Owner</p>
-						</div>
-					</div>
-				</div>
-				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
-					<div class="b-homeReviews__main-body m-bmw">
-						<p>Donec facilisis velit eust. Phasellus cons quat. Aenean letmein vitae quam. Vivamus let nunc.
-							Nunc consequsem velde metus imperdiet lacinia. Nam rutrum congued diam. Vestibulum acda
-							risus eros auctor as morbids sem magna viverra quis consectetuer quis nec magna. Lorem ipsum
-							dolor ametu consectetur adipisicing elit sed do eiusmod.</p>
-					</div>
-					<div class="b-homeReviews__main-person">
-						<div class="b-review__main-person">
-							<div class="b-review__main-person-inside m-personThree">
-							</div>
-						</div>
-						<div class="b-homeReviews__main-person-name">
-							<em>"</em>
-							<h4>DONALD CAMBELL</h4>
-							<p>Customer, Ferrari 488 GTB 2 Owner</p>
-						</div>
-					</div>
-				</div>
-				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
-					<div class="b-homeReviews__main-body m-jaguarRev">
-						<p>Donec facilisis velit eust. Phasellus cons quat. Aenean letmein vitae quam. Vivamus let nunc.
-							Nunc consequsem velde metus imperdiet lacinia. Nam rutrum congued diam. Vestibulum acda
-							risus eros auctor as morbids sem magna viverra quis consectetuer quis nec magna. Lorem ipsum
-							dolor ametu consectetur adipisicing elit sed do eiusmod.</p>
-					</div>
-					<div class="b-homeReviews__main-person">
-						<div class="b-review__main-person m-personTwo">
-							<div class="b-review__main-person-inside m-personTwo">
-							</div>
-						</div>
-						<div class="b-homeReviews__main-person-name">
-							<em>"</em>
-							<h4>JOHN SMITH</h4>
-							<p>Customer, Ferrari 488 GTB 2 Owner</p>
-						</div>
-					</div>
-				</div>
-				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
-					<div class="b-homeReviews__main-body m-bmw">
-						<p>Donec facilisis velit eust. Phasellus cons quat. Aenean letmein vitae quam. Vivamus let nunc.
-							Nunc consequsem velde metus imperdiet lacinia. Nam rutrum congued diam. Vestibulum acda
-							risus eros auctor as morbids sem magna viverra quis consectetuer quis nec magna. Lorem ipsum
-							dolor ametu consectetur adipisicing elit sed do eiusmod.</p>
-					</div>
-					<div class="b-homeReviews__main-person">
-						<div class="b-review__main-person">
-							<div class="b-review__main-person-inside m-personThree">
-							</div>
-						</div>
-						<div class="b-homeReviews__main-person-name">
-							<em>"</em>
-							<h4>DONALD CAMBELL</h4>
-							<p>Customer, Ferrari 488 GTB 2 Owner</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	-->
-	<!--b-homeReviews-->
-	<!--
-	<section class="b-asks">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 col-xs-12">
-					<div class="b-asks__first wow zoomInLeft" data-wow-delay="0.3s">
-						<div class="b-asks__first-circle">
-							<span class="fa fa-search"></span>
-						</div>
-						<div class="b-asks__first-info">
-							<h2>ARE YOU LOOKING FOR A CAR?</h2>
-							<p>Search Our Inventory With Thousands Of Cars And More
-								Cars Are Adding On Daily Basis</p>
-						</div>
-						<div class="b-asks__first-arrow">
-							<a href="listings.html"><span class="fa fa-angle-right"></span></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-0">
-					<div class="b-asks__first m-second wow zoomInRight" data-wow-delay="0.3s">
-						<div class="b-asks__first-circle">
-							<span class="fa fa-usd"></span>
-						</div>
-						<div class="b-asks__first-info">
-							<h2>DO YOU WANT TO SELL A CAR?</h2>
-							<p>Search Our Inventory With Thousands Of Cars And More
-								Cars Are Adding On Daily Basis</p>
-						</div>
-						<div class="b-asks__first-arrow">
-							<a href="listings.html"><span class="fa fa-angle-right"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	-->
-	<!--b-asks-->
-	<!--
-	<section class="b-partners">
-		<div class="container">
-			<h1 class="s-title wow zoomInUp" data-wow-delay="0.3s">OUR PARTNERS</h1>
-			<div class="">
-				<div class="b-brands__brand wow zoomInLeft" data-wow-delay="0.3s">
-					<img src="media/brands/lydia.png" alt="brand" />
-				</div>
-				<div class="b-brands__brand wow zoomInUp" data-wow-delay="0.3s">
-					<img src="media/brands/decosinto.png" alt="brand" />
-				</div>
-				<div class="b-brands__brand wow zoomInUp" data-wow-delay="0.3s">
-					<img src="media/brands/hospice.png" alt="brand" />
-				</div>
-				<div class="b-brands__brand wow zoomInRight" data-wow-delay="0.3s">
-					<img src="media/brands/aristeia.png" alt="brand" />
-				</div>
-			</div>
-		</div>
-	</section>
-	-->
-	<!--b-partners-->
-	<!--
+		</div> -->
+	</div>
+	<!--b-features-->
+
 	<div class="b-info">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-6 col-xs-6">
 					<aside class="b-info__aside wow zoomInLeft" data-wow-delay="0.3s">
 						<article class="b-info__aside-article">
-							<h3>OPENING HOURS</h3>
-							<div class="b-info__aside-article-item">
-								<h6>Sales Department</h6>
-								<p>Mon-Sat : 8:00am - 5:00pm<span>&middot;</span>
-									Sunday is closed</p>
-							</div>
-							<div class="b-info__aside-article-item">
-								<h6>Service Department</h6>
-								<p>Mon-Sat : 8:00am - 5:00pm<span>&middot;</span>
-									Sunday is closed</p>
-							</div>
-						</article>
-						<article class="b-info__aside-article">
-							<h3>About us</h3>
-							<p>Vestibulum varius od lio eget conseq
-								uat blandit, lorem auglue comm lodo
-								nisl non ultricies lectus nibh mas lsa
-								Duis scelerisque aliquet. Ante donec
-								libero pede porttitor dacu msan esct
-								venenatis quis.</p>
+							<img style="max-width:100%; height: 100%; margin: auto;"
+								src="images/elerhetosegek/b-info__aside__img-2.jpg" alt="audi" />
 						</article>
 					</aside>
 				</div>
-				<div class="col-md-4 col-xs-12">
-					<div class="b-info__latest">
-						<h3 class="wow slideInUp" data-wow-delay="0.3s">LATEST AUTOS</h3>
-						<div class="b-info__latest-article wow slideInUp" data-wow-delay="0.3s">
-							<div class="b-info__latest-article-photo m-audi"></div>
-							<div class="b-info__latest-article-info">
-								<h6><a href="detail.html">MERCEDES-AMG GT S</a></h6>
-								<div class="b-featured__item-links m-auto">
-									<a href="#">Used</a>
-									<a href="#">2014</a>
-									<a href="#">Manual</a>
-									<a href="#">Orange</a>
-									<a href="#">Petrol</a>
-								</div>
-								<p><span class="fa fa-tachometer"></span> 35,000 KM</p>
-							</div>
-						</div>
-						<div class="b-info__latest-article wow slideInUp" data-wow-delay="0.3s">
-							<div class="b-info__latest-article-photo m-audiSpyder"></div>
-							<div class="b-info__latest-article-info">
-								<h6><a href="detail.html">AUDI R8 SPYDER V-8</a></h6>
-								<div class="b-featured__item-links m-auto">
-									<a href="#">Used</a>
-									<a href="#">2014</a>
-									<a href="#">Manual</a>
-									<a href="#">Orange</a>
-									<a href="#">Petrol</a>
-								</div>
-								<p><span class="fa fa-tachometer"></span> 35,000 KM</p>
-							</div>
-						</div>
-						<div class="b-info__latest-article wow slideInUp" data-wow-delay="0.3s">
-							<div class="b-info__latest-article-photo m-aston"></div>
-							<div class="b-info__latest-article-info">
-								<h6><a href="detail.html">ASTON MARTIN VANTAGE</a></h6>
-								<div class="b-featured__item-links m-auto">
-									<a href="#">Used</a>
-									<a href="#">2014</a>
-									<a href="#">Manual</a>
-									<a href="#">Orange</a>
-									<a href="#">Petrol</a>
-								</div>
-								<p><span class="fa fa-tachometer"></span> 35,000 KM</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-xs-12">
-					<address class="b-info__contacts wow slideInUp" data-wow-delay="0.3s">
-						<p>contact us</p>
-						<div class="b-info__contacts-item">
-							<span class="fa fa-map-marker"></span>
-							<em>202 W 7th St, Suite 233 Los Angeles,<br />
-								California 90014 USA</em>
-						</div>
+
+				<div class="col-md-6 col-xs-12">
+					<address class="b-info__contacts wow zoomInUp" data-wow-delay="0.3s">
+						<p>Elérhetőségek</p>
 						<div class="b-info__contacts-item">
 							<span class="fa fa-phone"></span>
-							<em>Phone: 1-800- 624-5462</em>
-						</div>
-						<div class="b-info__contacts-item">
-							<span class="fa fa-fax"></span>
-							<em>FAX: 1-800- 624-5462</em>
-						</div>
+							<em>Phone: +36 30 952 8166 </em>
+						</div> <br>
 						<div class="b-info__contacts-item">
 							<span class="fa fa-envelope"></span>
-							<em>Email: info@domain.com</em>
+							<em>Email: info@dzcar.hu , dzcarkft@gmail.com</em>
 						</div>
-					</address>
-					<address class="b-info__map">
-						<a href="contacts.html">Open Location Map</a>
 					</address>
 				</div>
 			</div>
 		</div>
 	</div>
-	-->
 	<!--b-info-->
 
 	<footer class="b-footer">
@@ -1151,7 +597,7 @@
 				<div class="col-xs-4">
 					<div class="b-footer__company wow slideInLeft" data-wow-delay="0.3s">
 						<div class="b-nav__logo">
-							<h3><a href="home.html">Dz<span>Car</span></a></h3>
+							<h3><a href="index.html">Dz<span>Car</span></a></h3>
 						</div>
 						<p>&copy; 2020 Karakrisz &amp; minden jog fenntartva.</p>
 					</div>
@@ -1168,11 +614,11 @@
 						</div>
 						<nav class="b-footer__content-nav">
 							<ul>
-								<li><a href="home.html">Rólunk</a></li>
-								<li><a href="404.html">Tenerife</a></li>
-								<li><a href="listings.html">Elérhetőségek</a></li>
-								<li><a href="about.html">Munkáim</a></li>
-								<li><a href="404.html">Miben segíthetünk? </a></li>
+								<li><a href="#" class="dropdown-toggle-rolunk">Rólunk</a></li>
+								<li><a href="#" class="dropdown-toggle-tenerife">Tenerife</a></li>
+								<li><a href="#" class="dropdown-toggle-elerhetosegek">Elérhetőségek</a></li>
+								<li><a href="#" class="dropdown-toggle-munkaim">Munkáim</a></li>
+								<li><a href="#">Miben segíthetünk? </a></li>
 							</ul>
 						</nav>
 					</div>

@@ -60,6 +60,14 @@
 			// Go to top
 			this.initGoToTop();
 
+			// scrolltop
+			this.scrolltop();
+
+			// ClickAboutMe
+			this.ClickAboutMe();
+
+			// Mymenu
+			this.Mymenu();
 
 		},
 
@@ -119,7 +127,7 @@
 					}
 				});
 				$(".ui-slider-handle:first-of-type").append("<span class='min'>100</span>");
-				$(".ui-slider-handle:last-of-type").append("<span class='max'>1000</span>");
+				$(".ui-slider-handle:last-of-type").append("<span class='max'>3000</span>");
 			}
 		},
 
@@ -133,7 +141,6 @@
 		initOwlCarousel: function (options) {
 			$(".enable-owl-carousel").each(function (i) {
 				var $owl = $(this);
-
 				var itemsData = $owl.data('items');
 				var autoPlayData = $owl.data('auto-play');
 				var navigationData = $owl.data('navigation');
@@ -160,6 +167,7 @@
 				});
 			});
 		},
+
 
 		initBxSlider: function (options) {
 			$(".enable-bx-slider").each(function (i) {
@@ -301,6 +309,49 @@
 				});
 			});
 			$("#to-top").smoothScroll();
+		},
+
+		scrolltop: function (options) {
+			$('a.dropdown-toggle-rolunk').click(function () {
+					$('html, body').animate({
+						scrollTop: $("section.b-blog-rolunk").offset().top - 120
+					}, 1000)
+				}),
+				$('a.dropdown-toggle-tenerife').click(function () {
+					$('html, body').animate({
+						scrollTop: $("section.b-best-tenerife").offset().top - 140
+					}, 1000)
+				}),
+				$('a.dropdown-toggle-munkaim').click(function () {
+					$('html, body').animate({
+						scrollTop: $("section.b-featured-munkaim").offset().top - 140
+					}, 1000)
+				}),
+				$('a.dropdown-toggle-elerhetosegek').click(function () {
+					$('html, body').animate({
+						scrollTop: $("div.b-features-elerhetosegek").offset().top - 140
+					}, 1000)
+				}),
+				$('button.carousel-caption__btn-instructions').click(function () {
+					$('html, body').animate({
+						scrollTop: $("section.b-best-tenerife").offset().top - 140
+					}, 1000)
+				})
+		},
+
+		ClickAboutMe: function (options) {
+			$(document).on('click', '.b-blog__posts-one-body-main-button', function (e) {
+				$(".b-blog__posts-one-body-main-p").slideToggle();
+			});
+		},
+		Mymenu: function (options) {
+			$(document).on("scroll", function () {
+				if ($(document).scrollTop() > 50) {
+					$(".b-nav").removeClass("b-nav__bottom-shadow-off").addClass("b-nav__bottom-shadow-on");
+				} else {
+					$(".b-nav").removeClass("b-nav__bottom-shadow-on").addClass("b-nav__bottom-shadow-off");
+				}
+			});
 		},
 	};
 
