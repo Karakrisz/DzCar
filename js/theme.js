@@ -69,6 +69,8 @@
 			// Mymenu
 			this.Mymenu();
 
+			this.Myvalami();
+
 		},
 
 		dropdownhover: function (options) {
@@ -342,6 +344,7 @@
 		ClickAboutMe: function (options) {
 			$(document).on('click', '.b-blog__posts-one-body-main-button', function (e) {
 				$(".b-blog__posts-one-body-main-p").slideToggle();
+				$(".b-blog__posts-one-body-main-button").hide();
 			});
 		},
 		Mymenu: function (options) {
@@ -351,6 +354,20 @@
 				} else {
 					$(".b-nav").removeClass("b-nav__bottom-shadow-on").addClass("b-nav__bottom-shadow-off");
 				}
+			});
+		},
+		Myvalami: function (options) {
+			var btn = $(".mySlider__btn");
+
+			btn.on("click", function () {
+				$(".mySlider__item").first().clone().appendTo(".mySlider");
+				$(".mySlider__image").first().css({
+					transform: "rotateX(-180deg)",
+					opacity: 0
+				});
+				setTimeout(function () {
+					$(".mySlider__item").first().remove();
+				}, 200);
 			});
 		},
 	};

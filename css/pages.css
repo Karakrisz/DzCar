@@ -15,6 +15,7 @@
 - Profile:	http://themeforest.net/user/andreysokoltsov
 
 -------------------------------------------------------------------*/
+
 /* About Page */
 /* Page Header */
 .m-about .b-pageHeader__search h3 {
@@ -34,8 +35,9 @@
 
 .b-best__info-head h2 {
     margin: 0;
-    font: 700 30px 'Open Sans', sans-serif;
-    padding-left: 15px;
+    font-family: CorpA-Cyr-Light;
+    font-size: 40px;
+    padding-left: 35px;
     border-left: 4px solid #f76d2b;
 }
 
@@ -45,7 +47,7 @@
 }
 
 .b-best__info p {
-    font: 300 13px 'Open Sans', sans-serif;
+    font-family: CorpA-Cyr-Light;
     margin: 0 0 40px 0;
     line-height: 1.9;
 }
@@ -60,6 +62,33 @@
     height: auto;
     margin: 20px 25px;
 }
+
+@media screen and (max-width: 680px) {
+    .b-slider__info h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption__btn-instructions {
+        top: 0;
+    }
+
+    .b-info__contacts p {
+        font-size: 30px;
+    }
+
+    .b-best__info-head h2 {
+        font: 700 23px 'Open Sans', sans-serif;
+    }
+
+    .b-best__img {
+        left: 0;
+    }
+
+    .b-best__img__div__img-instructions {
+        margin: 5px 0;
+    }
+}
+
 
 /* What */
 .b-what {

@@ -22,18 +22,6 @@
 
 -------------------------------------------------------------------*/
 
-@font-face {
-    /* logo */
-    src: url(../fonts/Mercedes-Benz-Logo-Font.ttf);
-    font-family: Mercedes-benz-logo;
-}
-
-@font-face {
-    /* logo */
-    src: url(../fonts/CorpA_Cyr_Demi_.ttf);
-    font-family: CorpA-Cyr-Regular;
-}
-
 /* Top Bar */
 .b-topBar {
     border-bottom: 1px solid #eeeeee;
@@ -42,7 +30,7 @@
 .b-topBar__addr,
 .b-topBar__tel {
     padding: 20px 0 20px 0;
-    font-family: CorpA-Cyr-Regular;
+    font-family: CorpA-Cyr-Light;
     text-transform: uppercase;
     border-right: 1px solid #eeeeee;
 }
@@ -255,6 +243,8 @@ a.m-langLink {
     text-decoration: none;
     display: inline-block;
     padding: 0 14px 15px 14px;
+    font-family: CorpA-Cyr-Light;
+    font-size: 14px;
 }
 
 .b-nav__list ul li a:hover {
@@ -292,6 +282,11 @@ a.m-langLink {
 .b-slider__info {
     bottom: 80px;
     font: 300 11px 'Open Sans', sans-serif;
+}
+
+.b-slider__info__h1 {
+    font-family: CorpA-Cyr-Light;
+    font-size: 60px;
 }
 
 .carousel-indicators .active {
@@ -608,6 +603,11 @@ a.m-langLink {
     z-index: 100;
 }
 
+.b-featured h2 {
+    font-family: CorpA-Cyr-Light;
+    font-size: 25px;
+}
+
 .b-featured__item {
     width: 210px;
     margin: 0 auto;
@@ -633,10 +633,12 @@ a.m-langLink {
 
 .b-featured__item-price {
     padding: 3px 5px;
-    font: 700 20px 'PT Sans', sans-serif;
+    font-family: CorpA-Cyr-Light;
     float: left;
     margin-left: 5px;
+    font-size: 18px;
 }
+
 
 .b-featured__item h5 {
     font: 600 14px 'Open Sans', sans-serif;
@@ -1589,8 +1591,7 @@ a.m-langLink {
 
 .b-info__latest>h3,
 .b-info__aside-article>h3,
-.b-info__twitter>h3,
-.b-info__contacts>p {
+.b-info__twitter>h3 {
     margin: 0 0 20px 0;
     font: 700 14px 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -1598,6 +1599,10 @@ a.m-langLink {
     border-right: 3px solid #fff;
     border-left: 3px solid #fff;
     display: inline-block;
+}
+
+.b-info__contacts p {
+    font-family: CorpA-Cyr-Light;
 }
 
 .b-info__aside-article-item {
@@ -1810,4 +1815,18 @@ a.m-langLink {
 
 .b-footer__content-nav ul li a {
     font: 400 12px 'Open Sans', sans-serif;
+}
+
+/* KaraKrisz Media Query */
+
+@media screen and (max-width: 680px) {
+    .b-topBar {
+        display: none;
+    }
+
+    .b-nav,
+    .b-topBar {
+        position: relative;
+        top: 0;
+    }
 }
